@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Wexa — Inventory Management SaaS
 
 A full-stack, multi-tenant inventory management MVP built to the supplied six-hour assessment PRD.
@@ -163,3 +164,6 @@ Update backend `CLIENT_URL` to the exact deployed frontend origin. For multiple 
 ## Header controls
 
 The top-bar search opens with the search button or `Ctrl+K` and searches products by name or SKU within the signed-in organization. Selecting a result opens the Products page with that search applied. The bell opens live low-stock inventory alerts from the dashboard API. The profile menu shows the signed-in account and organization and provides sign out.
+=======
+# wexa-project
+>>>>>>> 68bbca2f03b3da91026988683815c1c00d5164d4
