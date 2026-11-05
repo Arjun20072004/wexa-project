@@ -14,7 +14,7 @@ if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) throw new Err
 const app = express();
 app.disable('x-powered-by');
 app.use(helmet());
-app.use(cors({ origin: (process.env.CLIENT_URL || 'http://localhost:5173').split(',').map(s => s.trim()), credentials: false }));
+app.use(cors({ origin: (process.env.FRONTEND_URL || 'http://localhost:5173').split(',').map(s => s.trim()), credentials: true }));
 app.use(express.json({ limit: '100kb' }));
 app.use('/api/auth', rateLimit({ windowMs: 15 * 60 * 1000, limit: 30, standardHeaders: 'draft-7', legacyHeaders: false }));
 app.get('/api/health', async (_req, res) => {
