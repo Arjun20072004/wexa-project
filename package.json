@@ -1,0 +1,13 @@
+{
+  "name": "Wexa-inventory-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-tenant SaaS inventory management MVP",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "check": "npm run check --prefix server && npm run build --prefix client"
+  },
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
